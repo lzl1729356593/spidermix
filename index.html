@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	
+<title>无标题文档</title>
+	<style>	
+		div.img{
+			margin:10px;
+			border:1px solid #ccc;
+			float:left;
+			width:400px;
+		}
+		div.img:hover{
+			border:1px solid red;
+		}
+		div.img img{
+			width:100%;
+			height:auto;
+		}
+		div.desc{
+			padding:15px;
+			text-align:center;
+		}
+		.tooltip{
+				position:relative;
+				display:inline-block;
+				border-bottom:none;
+				margin:100px 20px;
+				background-color:#00FF0D;
+				width:100px;
+				padding:20px 10px;
+		}
+		
+		.tooltip .tooltiptext{
+			visibility:hidden;
+			width: 170px;
+			background-color:#B50003;
+			color:#fff;
+			text-align:center;
+			border-radius:6px;
+			padding:10px 5px;
+			
+			/*定位*/
+			position:absolute;
+			z-index:1;
+			bottom:130%;
+			left:20px;
+			margin-left: -60px;
+			opacity:0;
+			transition:opacity 1s;
+		}
+		.tooltip .tooltiptext::after{
+			content:"";
+			position:absolute;
+			top:100%;
+			left:50%;
+			margin-left:-5px;
+			border-width:5px;
+			border-style:solid;
+			border-color:#B50003 transparent transparent transparent;
+			
+		}
+		
+		.tooltip:hover .tooltiptext{
+			visibility:visible;
+			opacity:1;
+		}
+		
+		
+	</style>
+
+</head>
+
+<body style="text-align:center;">
+	<div class="responsive" >
+		<div class="img">
+			<a target="_blank" href="图片/6.jpg">
+				<img src="图片/6.jpg" alt="图片文本描述" width="300" height="200">
+			</a>
+		<div class="desc">照片</div>
+		</div>
+	</div>
+
+	<div class="responsive" >
+		<div class="img">
+			<a target="_blank" href="图片/5.jpg">
+				<img src="图片/5.jpg" alt="图片文本描述" width="300" height="200">
+			</a>
+		<div class="desc">照片</div>
+		</div>
+	</div>
+
+	<div class="responsive" >
+		<div class="img">
+			<a target="_blank" href="图片/4.jpg">
+				<img src="图片/4.jpg" alt="图片文本描述" width="300" height="200">
+			</a>
+		<div class="desc">照片</div>
+		</div>
+	</div>
+	
+	<div class="responsive" >
+		<div class="img">
+			<a target="_blank" href="图片/3.jpg">
+				<img src="图片/3.jpg" alt="图片文本描述" width="300" height="200">
+			</a>
+		<div class="desc">照片</div>
+		</div>
+	</div>
+	
+	<div class="responsive" >
+		<div class="img">
+			<a target="_blank" href="图片/2.jpg">
+				<img src="图片/2.jpg" alt="图片文本描述" width="300" height="200">
+			</a>
+		<div class="desc">照片</div>
+		</div>
+	</div>
+	
+	<div class="responsive" >
+		<div class="img">
+			<a target="_blank" href="图片/1.jpg">
+				<img src="图片/1.jpg" alt="图片文本描述" width="300" height="200">
+			</a>
+		<div class="desc">照片</div>
+		</div>
+	</div>
+	
+
+<div class="tooltip">指我 
+  <span class="tooltiptext">原来真的可以有提示！</span> 
+</div>
+</body>
+</html>
